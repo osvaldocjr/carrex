@@ -1,4 +1,4 @@
-const servicos = document.querySelectorAll('.container-servico li');
+const servicos = document.querySelectorAll('.lista-servico li');
 const descricaoServicos = document.querySelector('.descricao-servicos');
 const descricaoPadrao = '<p>Escolha uma opção acima para ler a descrição</p>';
 const sobreServicos = [
@@ -14,12 +14,8 @@ let servicoSelecionado = null;
 
 servicos.forEach((servico, index) => {
     servico.addEventListener('click', () => {
-        if (servicoSelecionado !== null) {
-            servicos[servicoSelecionado].classList.remove('active');
-        }
-
         if (servicoSelecionado === index) {
-            descricaoServicos.style.height = '40px';
+            descricaoServicos.style.height = '0';
             setTimeout(() => {
                 descricaoServicos.innerHTML = descricaoPadrao;
                 servicoSelecionado = null;
@@ -31,7 +27,6 @@ servicos.forEach((servico, index) => {
                 descricaoServicos.style.height = descricaoServicos.scrollHeight + 'px';
                 servicoSelecionado = index;
             }, 300);
-            servico.classList.add('active');
         }
     });
 });
