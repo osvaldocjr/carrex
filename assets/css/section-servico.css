@@ -1,0 +1,51 @@
+.container-servico {
+    padding:30px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+.lista-servico {
+    display:flex;
+    list-style:none;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.lista-servico li {
+    cursor: pointer;
+    border:2px solid #000;
+    border-radius:50px;
+    padding:5px 10px;
+    
+    background-color:#000;
+    font-size:17px;
+    font-weight:500;
+    color:#fff;
+}
+.lista-servico li:hover {
+    background-color:#97C11F;
+    color:#000;
+}
+.lista-servico li.active {
+    background-color: #97C11F;
+    color: #000;
+}
+
+.descricao-servicos {
+    display:flex;
+    justify-content:center;
+
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+    height: 40px;
+}
+
+.polimento-descricao {
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.polimento-descricao div ol, .polimento-descricao div ul {
+    padding:revert;
+}

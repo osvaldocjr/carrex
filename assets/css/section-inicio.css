@@ -1,0 +1,8 @@
+.container-inicio {
+    background:url("../img/banner/banner-carrex.jpg");
+    height:calc(100vh - 70px);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:#000;
+    background-size: contain;
+}
