@@ -14,19 +14,24 @@ let servicoSelecionado = null;
 
 servicos.forEach((servico, index) => {
     servico.addEventListener('click', () => {
-        if (servicoSelecionado === index) {
-            descricaoServicos.style.height = '0';
+        if (servicoSelecionado !== null && servicoSelecionado === index) {
+            servicos[servicoSelecionado].classList.toggle('active');
+            descricaoServicos.style.height = '20px';
             setTimeout(() => {
                 descricaoServicos.innerHTML = descricaoPadrao;
                 servicoSelecionado = null;
-            }, 300);
+            }, 500);
         } else {
+            if (servicoSelecionado !== null) {
+                servicos[servicoSelecionado].classList.remove('active');
+            }
+            servico.classList.add('active');
             descricaoServicos.style.height = '0';
             setTimeout(() => {
                 descricaoServicos.innerHTML = sobreServicos[index];
                 descricaoServicos.style.height = descricaoServicos.scrollHeight + 'px';
                 servicoSelecionado = index;
-            }, 300);
+            }, 500);
         }
     });
 });
