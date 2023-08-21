@@ -12,26 +12,35 @@ const sobreServicos = [
 
 let servicoSelecionado = null; 
 
+function toggleServico(index) {
+    if (servicoSelecionado !== null) {
+        servicos[servicoSelecionado].classList.remove('active');
+    }
+
+    if (servicoSelecionado !== index) {
+        servicos[index].classList.add('active');
+        descricaoServicos.style.height = '0';
+        setTimeout(() => {
+            descricaoServicos.innerHTML = sobreServicos[index];
+            descricaoServicos.style.height = descricaoServicos.scrollHeight + 'px';
+            servicoSelecionado = index;
+        }, 500);
+    } else {
+        descricaoServicos.style.height = '20px';
+        setTimeout(() => {
+            descricaoServicos.innerHTML = descricaoPadrao;
+            servicoSelecionado = null;
+        }, 500);
+    }
+}
+
 servicos.forEach((servico, index) => {
     servico.addEventListener('click', () => {
-        if (servicoSelecionado !== null && servicoSelecionado === index) {
-            servicos[servicoSelecionado].classList.toggle('active');
-            descricaoServicos.style.height = '20px';
-            setTimeout(() => {
-                descricaoServicos.innerHTML = descricaoPadrao;
-                servicoSelecionado = null;
-            }, 500);
-        } else {
-            if (servicoSelecionado !== null) {
-                servicos[servicoSelecionado].classList.remove('active');
-            }
-            servico.classList.add('active');
-            descricaoServicos.style.height = '0';
-            setTimeout(() => {
-                descricaoServicos.innerHTML = sobreServicos[index];
-                descricaoServicos.style.height = descricaoServicos.scrollHeight + 'px';
-                servicoSelecionado = index;
-            }, 500);
-        }
+        toggleServico(index);
+    });
+
+    servico.addEventListener('touchstart', (event) => {
+        event.preventDefault();
+        toggleServico(index);
     });
 });
