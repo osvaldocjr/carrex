@@ -81,5 +81,6 @@
 @media (max-width:440px) {
     .container-inicio {
         padding-top:70px;
+        height:100vh;
     }
 }
