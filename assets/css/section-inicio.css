@@ -1,8 +1,85 @@
+#inicio {
+    background-color:#000;
+}
 .container-inicio {
+    /*
     background:url("../img/banner/banner-carrex.jpg");
-    height:calc(100vh - 70px);
     background-position:center;
     background-repeat:no-repeat;
-    background-color:#000;
     background-size: contain;
+    */
+    max-width:1200px;
+    margin:auto;
+    height:calc(100vh - 115px);
+}
+
+.whatsapp {
+    position: fixed;
+    bottom:30px;
+    right:30px;
+
+    display:flex;
+    justify-content:center;
+
+    animation: whatsappFlutuante 1.1s infinite alternate-reverse linear;
+}
+.whatsapp a img {
+    padding:5px;
+    width:50px;
+    border:5px solid #fff;
+    border-radius:50px;
+    background-color:#25d366;
+}
+@keyframes whatsappFlutuante {
+    from {
+        bottom:8px;
+    } 
+    to {
+        bottom:15px;
+    }
+}
+
+.veiculos-para-lavar h3 {
+    width:50%;
+    text-align:center;
+    font-size:40px;
+    margin-right:100px;
+}
+
+.veiculos {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    list-style-type: none;
+    gap:20px;
+}
+.veiculos li {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    cursor: pointer;
+
+    font-size:28px;
+}
+.nome-veiculo {
+    font-weight: 700;
+    font-size:20px;
+}
+.veiculos-para-lavar {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+}
+
+
+.descricao-habilidade {
+    text-align: center;
+}
+
+@media (max-width:440px) {
+    .container-inicio {
+        padding-top:70px;
+    }
 }

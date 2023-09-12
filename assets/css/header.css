@@ -1,5 +1,6 @@
 header {
     background-color:#000;
+    border-bottom:2px solid #97C11F;
 }
 .header-container {
     display:flex;
@@ -46,6 +47,7 @@ header {
 
 @media (max-width:440px) {
     .header-container {
+        border-bottom:2px solid #97C11F;
         background-color:#000;
         position: fixed;
         top:0;
@@ -57,18 +59,18 @@ header {
     .hamburguer {
         display:block;
     }
-    .hamburguer.ativado .bar:nth-child(2) {
+    .hamburguer.menu-ativado .bar:nth-child(2) {
         opacity:0;
     }
-    .hamburguer.ativado .bar:nth-child(1) {
+    .hamburguer.menu-ativado .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    .hamburguer.ativado .bar:nth-child(3) {
+    .hamburguer.menu-ativado .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
     .nav-menu {
         position: fixed;
-        top:70px;
+        top:74px;
         left:-100%;
         gap:0;
         border-radius: 0 0 20px 20px;
@@ -79,7 +81,7 @@ header {
         border-bottom:2px solid #97C11F;
         background-color:#000;
     }
-    .nav-menu.ativado {
+    .nav-menu.menu-ativado {
         left:0;
     }
     .nav-item {

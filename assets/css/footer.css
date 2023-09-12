@@ -1,3 +1,6 @@
+footer {
+    background-color:#d1d1d1;
+}
 .container-footer {
     display:flex;
     justify-content:center;
