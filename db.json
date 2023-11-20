@@ -1,10 +1,16 @@
 {
   "promocao": [
     {
-      "id": 1,
-      "servico":"",
-      "valor": "",
-      "dias": ""
+      "servico": "sad222",
+      "valor": "22222",
+      "dias": "222",
+      "id": 1
+    },
+    {
+      "servico": "222",
+      "valor": "222",
+      "dias": "222",
+      "id": 2
     }
   ]
 }

@@ -21,7 +21,6 @@
     transform: translateX(-100%);
     opacity: 0;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    visibility:hidden;
 }
 .lado-esquerdo-inicio.animate {
     transform: translateX(0);
