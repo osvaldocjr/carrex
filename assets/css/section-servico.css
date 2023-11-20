@@ -11,32 +11,28 @@
     font-size: 20px;
 }
 
-.lista-servico {
-    list-style: none;
-    gap: 20px;
-    justify-content: center;
-}
-
-.lista-servico li {
+.servico-css {
     cursor: pointer;
-    border: 2px solid #000;
-    border-bottom: none;
     padding: 5px 10px;
+
+    border-bottom:2px solid #000;
 
     font-size: 17px;
     font-weight: 500;
     color: #000;
 }
-
-.lista-servico li:last-child {
-    border-bottom: 2px solid #000;
+.servico-css:last-child {
+    border-bottom: none;
 }
 
+.lista-servico {
+    list-style-type:none;
+    border:2px solid #000;
+}
 .lista-servico li:hover {
     background-color: #97C11F;
     color: #000;
 }
-
 .lista-servico li.active {
     background-color: #97C11F;
     color: #000;
@@ -80,16 +76,16 @@
     }
 
     to {
-        transform: rotate(45deg);
+        transform: rotate(225deg);
     }
 }
 .desativado {
-    transition: transform 0.3s;
-    animation: rotateAnimationNormal 0.3s forwards;
+    transition: transform 0.5s;
+    animation: rotateAnimationNormal 0.5s forwards;
 }
 @keyframes rotateAnimationNormal {
     from {
-        transform: rotate(40deg);
+        transform: rotate(240deg);
     }
 
     to {
@@ -102,11 +98,17 @@
     max-height: 0; 
     transition: max-height 0.5s ease; 
 }
-
 .descricao-total.mostrar {
     display: block;  
 }
-
 .descricao-total p {
     padding: 10px;
+}
+
+.descricao-lavacao {
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    margin:10px 25px;
+    list-style-type:disc;
 }

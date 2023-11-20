@@ -37,24 +37,20 @@ header {
 }
 .bar {
     display:block;
-    width:28px;
-    height:3px;
+    width:32px;
+    height:4px;
     border-radius:2px;
     margin:5px auto;
     background-color: #97C11F;
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width:440px) {
+@media (max-width:500px) {
     .header-container {
-        border-bottom:2px solid #97C11F;
-        background-color:#000;
-        position: fixed;
-        top:0;
-        width:100%;
-        flex-direction:row;
-        justify-content:space-between;
-        padding:10px;
+        background-color:none;
+        position: absolute;
+        right:0;
+        padding:0;
     }
     .hamburguer {
         display:block;
@@ -63,28 +59,74 @@ header {
         opacity:0;
     }
     .hamburguer.menu-ativado .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(9px) rotate(50deg);
     }
     .hamburguer.menu-ativado .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-9px) rotate(-50deg);
+    }
+
+    .logo a{
+        display:none;
+    }
+    .navbar {
+        position: fixed;
+        top:50px;
+        right:55px;
+        background-color:#000;
+        padding:10px;
+        border-radius:20px;
+        border:1px solid #97C11F;
     }
     .nav-menu {
         position: fixed;
-        top:74px;
         left:-100%;
-        gap:0;
-        border-radius: 0 0 20px 20px;
-        text-align:center;
+        top:0;
+        gap:20px;
         flex-direction:column;
+        align-items:center;
         width:100%;
+        padding:0 10px;
+        height:100dvh;
         transition:0.3s;
-        border-bottom:2px solid #97C11F;
-        background-color:#000;
+        background-color: #000;
     }
     .nav-menu.menu-ativado {
         left:0;
     }
     .nav-item {
-        margin:16px 0;
+        text-align:center;
+        background-color:#97C11F;
+        border-radius:30px;
+        padding:20px 0;
+        width:100%;
+    }
+    .nav-item:first-child {
+        margin-top:120px;
+    }
+    .nav-item a {
+        margin:0 10px;
+        background-color:#97C11F;
+        border-radius:30px;
+        padding:10px 30%;
+        color:#000;
+        cursor: pointer;
+        font-size:22px;
+    }
+    .nav-item a:hover {
+        color:#000;
+    }
+
+    .lado-direito-inicio {
+        display:none;
+    }
+
+    header {
+        border-bottom:none;
+    }
+}
+
+@media (max-width:400px) { 
+    .nav-item a {
+        padding:10px 30px;
     }
 }

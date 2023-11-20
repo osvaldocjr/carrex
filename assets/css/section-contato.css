@@ -18,6 +18,12 @@
     gap:15px;
 }
 
+.horario {
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
 .horario p, .telefone a, .telefone p {
     color: #fff;
     font-size:18px;

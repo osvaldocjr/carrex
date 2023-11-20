@@ -6,7 +6,6 @@ liElements.forEach((liElement) => {
 
     liElement.addEventListener('click', () => {
         if (descricaoTotal.style.maxHeight === '0px' || descricaoTotal.style.maxHeight === '') {
-            // Calcular a altura da descrição com seu conteúdo real
             const alturaDescricao = descricaoTotal.scrollHeight + 'px';
             descricaoTotal.style.maxHeight = alturaDescricao;
             imgMais.classList.add('ativado');

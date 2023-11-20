@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrex</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="assets/css/body.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/section-inicio.css">
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="logo-inicio">
         <nav class="header-container">
             <div class="logo">
                 <a href="index.html">
@@ -23,10 +24,11 @@
             </div>
             <div class="navbar">
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="#servico" class="nav-link">Serviços</a></li>
-                    <li class="nav-item"><a href="#contato" class="nav-link">Horario</a></li>
-                    <li class="nav-item"><a href="#contato" class="nav-link">Agendamento</a></li>
-                    <li class="nav-item"><a href="#contato" class="nav-link">Localização</a></li>
+                    <li class="nav-item"><a href="#logo-inicio" class="nav-link scroll-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#servico" class="nav-link scroll-link">Serviços</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link scroll-link">Horario</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link scroll-link">Agendamento</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link scroll-link">Localização</a></li>
                 </ul>
                 <div class="hamburguer">
                     <span class="bar"></span>
@@ -41,16 +43,17 @@
 
         <section id="inicio">
             <div class="container-inicio">
-                <!--<div class="veiculos-para-lavar">
-                    <h3>Trabalhamos com esses tipos de veículos:</h3>
-                    <ul class="veiculos">
-                        <li class="moto">Motos</li>
-                        <li class="carro">Carros (Hatch e sedans)</li>
-                        <li class="suv">SUV</li>
-                        <li class="caminhonete">Caminhonetes</li>
-                    </ul>
-                    <div class="descricao-habilidade"></div>
-                </div>-->
+                <div class="lado-esquerdo-inicio">
+                    <img src="assets/img/inicio/c.png" alt="C">
+                    <img src="assets/img/inicio/a.png" alt="A">
+                    <img src="assets/img/inicio/r.png" alt="R">
+                    <img src="assets/img/inicio/r.png" alt="R">
+                    <img src="assets/img/inicio/e.png" alt="E">
+                    <img src="assets/img/inicio/x.png" alt="X">
+                </div>
+                <div class="lado-direito-inicio">
+                    <p>Bem-vindo à Auto Lavação CarreX</p>
+                </div>
             </div>
             <div class="whatsapp">
                 <a href="https://api.whatsapp.com/send?phone=554899586895&text=Gostaria%20de%20fazer%20agendamento"
@@ -66,134 +69,70 @@
                     <p>Escolha uma opção para ler a descrição do serviço</p>
                 </div>
                 <ul class="lista-servico">
-                    <li class="servico1">
+                    <li class="servico1 servico-css">
                         <div class="div-titulo">
                             <img src="assets/img/servico/mais.png" class="img-mais">
-                            <span class="titulo-servico">Lavação</span>
+                            <h2 class="titulo-servico">Lavação</h2>
                         </div>
                         <div class="descricao-total">
-                            <span>
-                                A lavagem de veículo é um processo minucioso e cuidadoso que visa garantir a limpeza e
-                                conservação do automóvel. Nossos profissionais altamente treinados executam esse serviço
-                                com total dedicação e atenção aos detalhes. <br><br>Para começar, utilizamos um pincel
-                                específico para limpar minuciosamente as letras e locais de difícil acesso, onde a luva
-                                de microfibra não consegue alcançar. Em seguida, empregamos uma esponja especialmente
-                                projetada para remover com eficiência os insetos e sujeiras mais persistentes,
-                                garantindo uma limpeza completa. <br><br>Cuidamos também de áreas muitas vezes
-                                negligenciadas, como a caixa de ar do carro e o interior dos aros, garantindo que toda a
-                                superfície do veículo esteja impecável. <br><br>Para evitar qualquer possibilidade de
-                                danificar a pintura ou a lataria, utilizamos panos específicos e de alta qualidade
-                                durante o processo de secagem. Além disso, em locais de difícil acesso, onde o pano não
-                                alcança, empregamos um compressor de ar para assegurar que cada parte do veículo esteja
-                                completamente seca. <br><br>A preocupação com a limpeza interna do veículo também é
-                                primordial. Nossos profissionais passam o aspirador em todo o interior, removendo
-                                poeira, sujeira e resíduos. Além disso, aplicamos produtos especialmente formulados para
-                                devolver o aspecto de novo e proteger os plásticos internos.<br><br> A limpeza dos
-                                vidros é feita com extrema atenção, garantindo uma visão clara e segura para o condutor.
-                                Utilizamos produtos específicos para não manchar películas, evitando manchas e marcas
-                                nos vidros. <br><br>Em resumo, nossa lavação de veículo é um serviço completo e
-                                detalhado, que vai muito além de uma simples lavagem. Buscamos sempre a excelência em
-                                cada etapa, proporcionando aos nossos clientes um carro impecavelmente limpo e
-                                protegido. Conte conosco para cuidar do seu veículo com o máximo de carinho e
-                                profissionalismo.
-                            </span>
+                            <ul class="descricao-lavacao">
+                                <li>Pré-lavagem</li>
+                                <li>Limpeza das caixas de rodas, pneus, aros e espelhos de aro</li>
+                                <li>Limpeza da caixa de ar, aberturas de porta e combustível</li>
+                                <li>Limpeza de emblemas e locais de difícil acesso com pincel</li>
+                                <li>Limpeza da pintura com shampoo neutro e luva de microfibra</li>
+                                <li>Secagem com pano de microfibra e compressor de ar</li>
+                                <li>Aspiração interna mais ar comprimido nas partes internas</li>
+                                <li>Limpeza dos plásticos internos</li>
+                                <li>Limpeza dos vidros</li>
+                                <li>Aplicação de proteção nas caixas de roda</li>
+                                <li>Aplicação de "pretinho"</li>
+                                <li>Aplicação de cera</li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="servico2">
+                    <li class="servico2 servico-css">
                         <div class="div-titulo">
                             <img src="assets/img/servico/mais.png" class="img-mais">
-                            <span class="titulo-servico">Lavagem do motor</span>
+                            <h2 class="titulo-servico">Descontaminação da pintura</h2>
                         </div>
                         <div class="descricao-total">
-                            <p>
-                                Descrição do Serviço 2
-                            </p>
+                            <p><span>*</span> Precisa ser feito a <span>Lavação primeiro</span></p>
+                            <ul class="descricao-lavacao">
+                                <li>Lavação</li>
+                                <li>Massa para remoção</li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="servico3">
+                    <li class="servico3 servico-css">
                         <div class="div-titulo">
                             <img src="assets/img/servico/mais.png" class="img-mais">
-                            <span class="titulo-servico">Lavagem de chassi</span>
+                            <h2 class="titulo-servico">Polimento</h2>
                         </div>
                         <div class="descricao-total">
-                            <p>
-                                Descrição do Serviço 3
-                            </p>
+                            <p><span>*</span> Precisa ser feito a <span>Lavação e Descontaminação</span> primeiro</p>
+                            <ul class="descricao-lavacao">
+                                <li>Lavação</li>
+                                <li>Massa para remoção</li>
+                                <li>Polimento</li>
+                            </ul>
                         </div>
                     </li>
-                    <li class="servico4">
+                    <li class="servico4 servico-css">
                         <div class="div-titulo">
                             <img src="assets/img/servico/mais.png" class="img-mais">
-                            <span class="titulo-servico">Polimento</span>
+                            <h2 class="titulo-servico">Vitrificação</h2>
                         </div>
                         <div class="descricao-total">
                             <p>
-                            <div class="polimento-descricao">
-                                <div>
-                                    <h3>Polimento Automotivo: Renove o Brilho e a Elegância do Seu Veículo</h3>
-                                    <p>Apresentamos a você o segredo para realçar a beleza do seu veículo e devolver-lhe
-                                        o brilho original que merece - nosso serviço profissional de polimento
-                                        automotivo. Seja um carro novo ou um clássico de estimação, nosso processo de
-                                        polimento especializado é projetado para trazer de volta o esplendor da pintura,
-                                        deixando uma impressão duradoura por onde quer que você vá.</p>
-                                </div>
-                                <div>
-                                    <h3>Por que Escolher o Polimento Automotivo?</h3>
-                                    <p>Com o tempo, fatores ambientais, desgaste diário e exposição ao sol podem afetar
-                                        a aparência da pintura do seu carro. Riscos superficiais, manchas de água e
-                                        imperfeições diminuem o brilho e a qualidade da pintura. Nosso serviço de
-                                        polimento cuidadoso e técnico é uma maneira eficaz de revitalizar a aparência do
-                                        seu veículo e proteger seu investimento.
-                                    </p>
-                                </div>
-                                <div>
-                                    <h3>O que Nosso Polimento Automotivo Oferece?</h3>
-                                    <p>Nossa equipe de profissionais treinados está comprometida em oferecer resultados
-                                        excepcionais. Quando você escolhe nosso serviço de polimento automotivo, pode
-                                        esperar:</p>
-                                    <ol>
-                                        <li>Preparação Detalhada: Realizamos uma limpeza minuciosa para remover sujeira
-                                            e detritos, preparando a superfície para o polimento.</li>
-                                        <li>Remoção de Defeitos: Utilizamos técnicas de polimento avançadas para
-                                            eliminar riscos, marcas de redemoinho e imperfeições superficiais.</li>
-                                        <li>Brilho Profundo: Nosso processo de polimento restaura o brilho profundo da
-                                            pintura, realçando a cor e a vivacidade.</li>
-                                        <li>Proteção Duradoura: Aplicamos produtos de proteção de alta qualidade para
-                                            ajudar a manter a aparência recém-polida por mais tempo.</li>
-                                        <li>Acabamento Impecável: Cada detalhe é tratado com cuidado, resultando em um
-                                            acabamento suave e uniforme.</li>
-                                    </ol>
-                                </div>
-                                <div>
-                                    <h3>Benefícios do Polimento Automotivo:</h3>
-                                    <ul>
-                                        <li>Restauração da Aparência: Transforme a aparência do seu veículo, eliminando
-                                            arranhões e manchas superficiais.</li>
-                                        <li>Valorização do Veículo: Um exterior polido aumenta o valor do seu veículo e
-                                            atrai a atenção dos compradores em potencial.</li>
-                                        <li>Proteção da Pintura: O polimento não apenas melhora a estética, mas também
-                                            protege a pintura contra danos futuros.</li>
-                                        <li>Experiência de Condução Aprimorada: Um carro polido reflete a luz de maneira
-                                            mais uniforme, proporcionando um visual deslumbrante.</li>
-                                        <li>Orgulho e Satisfação: Dirigir um veículo com pintura polida é uma fonte de
-                                            orgulho e satisfação para qualquer proprietário.</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <p>Eleve o visual do seu veículo a um novo patamar com nosso serviço de polimento
-                                        automotivo de alta qualidade. Deixe-nos cuidar da sua pintura e revele o
-                                        potencial completo da beleza do seu carro. Agende hoje mesmo e experimente a
-                                        transformação que o polimento pode oferecer. Seu veículo merece o melhor, e
-                                        estamos aqui para torná-lo brilhar.</p>
-                                </div>
-                            </div>
+                                Descrição do Serviço 5
                             </p>
                         </div>
                     </li>
-                    <li class="servico5">
+                    <li class="servico5 servico-css">
                         <div class="div-titulo">
                             <img src="assets/img/servico/mais.png" class="img-mais">
-                            <span class="titulo-servico">Higienização</span>
+                            <h2 class="titulo-servico">Higienização</h2>
                         </div>
                         <div class="descricao-total">
                             <p>
@@ -201,14 +140,25 @@
                             </p>
                         </div>
                     </li>
-                    <li class="servico6">
+                    <li class="servico6 servico-css">
                         <div class="div-titulo">
                             <img src="assets/img/servico/mais.png" class="img-mais">
-                            <span class="titulo-servico">Vitrificação</span>
+                            <h2 class="titulo-servico">Lavagem do motor</h2>
                         </div>
                         <div class="descricao-total">
                             <p>
-                                Descrição do Serviço 5
+                                Descrição do Serviço 2
+                            </p>
+                        </div>
+                    </li>
+                    <li class="servico7 servico-css">
+                        <div class="div-titulo">
+                            <img src="assets/img/servico/mais.png" class="img-mais">
+                            <h2 class="titulo-servico">Lavagem de chassi</h2>
+                        </div>
+                        <div class="descricao-total">
+                            <p>
+                                Descrição do Serviço 3
                             </p>
                         </div>
                     </li>
@@ -219,7 +169,8 @@
         <section id="contato" class="contato">
             <div class="container-contato">
                 <div class="horario">
-                    <p>Horário: Segunda a sexta: 8h as 18h, Sábado 8h as 13h</p>
+                    <p>Horário de atendimento: Segunda a sexta: 8h as 18h, Sábado 8h as 13h</p>
+                    <p>Formas de pagamento: Dinheiro, Pix, cartão de débito e cartão de crédito</p>
                 </div>
                 <div class="telefone">
                     <p>
@@ -243,12 +194,13 @@
 
     <footer>
         <div class="container-footer">
-            <p>Desenvolvido por Osvaldo</p>
+            <p>© 2005 - 2023 AutoLavação CarreX. Todos os direitos reservados.</p>
         </div>
     </footer>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/servicos.js"></script>
     <script src="assets/js/inicio.js"></script>
+    <script src="assets/js/scroll.js"></script>
 </body>
 
 </html>
