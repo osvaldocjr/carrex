@@ -1,0 +1,9 @@
+#promocao {
+    background-color:#d1d1d1;
+    border-bottom:1px solid #000;
+}
+.container-promocao {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: auto;
+}

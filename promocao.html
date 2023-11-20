@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar promoção</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="formulario">
+            <div class="container-pagina-promocao">
+                <form id="form-promocao">
+                    <div class="servico">
+                        <label>Escreva o serviço:</label>
+                        <input type="text" name="servico" required>
+                    </div>
+                    <div class="valor">
+                        <label>Valor:</label>
+                        <input type="number" name="valor" required>
+                    </div>
+                    <div class="dias">
+                        <label>Quantidade de dias:</label>
+                        <input type="text" name="dias" required>
+                    </div>
+                </form>
+                <div class="div-mostrar-promocao">
+                    <ul class="mostra-promocao">
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/services/promocao-services.js" type="module"></script>
+    <script src="assets/js/promocao/promocao.js" type="module"></script>
+</body>
+</html>
